@@ -1,0 +1,6 @@
+ip_verify/uart_verify/uart_verify/uart_verify.runs/uart_axi_traffic_gen_0_0_synth_1/vivado.pb
+ip_verify/uart_verify/uart_verify/uart_verify.runs/uart_axi_uartlite_0_0_synth_1/vivado.pb
+ip_verify/uart_verify/uart_verify/uart_verify.runs/uart_clk_wiz_0_0_synth_1/vivado.pb
+ip_verify/uart_verify/uart_verify/uart_verify.runs/uart_MASTER_0_0_synth_1/vivado.pb
+ip_verify/uart_verify/uart_verify/uart_verify.runs/uart_SLAVE_0_0_synth_1/vivado.pb
+ip_verify/uart_verify/uart_verify/uart_verify.sim/sim_1/behav/xsim/xelab.pb
