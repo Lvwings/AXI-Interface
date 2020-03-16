@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/uart/ip/uart_axi_uartlite_0_0/sim/uart_axi_uartlite_0_0.vhd" \
+
+nosort

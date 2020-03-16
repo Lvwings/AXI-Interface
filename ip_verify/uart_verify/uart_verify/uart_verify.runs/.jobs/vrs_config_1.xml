@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="uart_axi_traffic_gen_0_0_synth_1" LaunchDir="E:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.runs/uart_axi_traffic_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uart_axi_uartlite_0_0_synth_1" LaunchDir="E:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.runs/uart_axi_uartlite_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uart_MASTER_0_0_synth_1" LaunchDir="E:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.runs/uart_MASTER_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uart_SLAVE_0_0_synth_1" LaunchDir="E:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.runs/uart_SLAVE_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uart_DATA_uart_0_0_synth_1" LaunchDir="E:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.runs/uart_DATA_uart_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uart_clk_wiz_0_0_synth_1" LaunchDir="E:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.runs/uart_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="E:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="uart_axi_traffic_gen_0_0_synth_1"/>
+		<Parent Id="uart_axi_uartlite_0_0_synth_1"/>
+		<Parent Id="uart_MASTER_0_0_synth_1"/>
+		<Parent Id="uart_SLAVE_0_0_synth_1"/>
+		<Parent Id="uart_DATA_uart_0_0_synth_1"/>
+		<Parent Id="uart_clk_wiz_0_0_synth_1"/>
+	</Run>
+</Runs>
+

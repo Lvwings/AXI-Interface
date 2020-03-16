@@ -1,0 +1,713 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Mar 16 15:06:43 2020
+# Process ID: 9980
+# Current directory: E:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.runs/uart_DATA_uart_0_0_synth_1
+# Command line: vivado.exe -log uart_DATA_uart_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_DATA_uart_0_0.tcl
+# Log file: E:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.runs/uart_DATA_uart_0_0_synth_1/uart_DATA_uart_0_0.vds
+# Journal file: E:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.runs/uart_DATA_uart_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source uart_DATA_uart_0_0.tcl -notrace
+Command: synth_design -top uart_DATA_uart_0_0 -part xc7a200tfbg484-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6828 
+WARNING: [Synth 8-2507] parameter declaration becomes local in DATA_uart with formal parameter declaration list [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:154]
+WARNING: [Synth 8-2507] parameter declaration becomes local in DATA_uart with formal parameter declaration list [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:162]
+WARNING: [Synth 8-2507] parameter declaration becomes local in DATA_uart with formal parameter declaration list [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:164]
+WARNING: [Synth 8-2507] parameter declaration becomes local in DATA_uart with formal parameter declaration list [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:167]
+WARNING: [Synth 8-2507] parameter declaration becomes local in DATA_uart with formal parameter declaration list [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:185]
+WARNING: [Synth 8-2507] parameter declaration becomes local in DATA_uart with formal parameter declaration list [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:200]
+WARNING: [Synth 8-2507] parameter declaration becomes local in DATA_uart with formal parameter declaration list [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:201]
+WARNING: [Synth 8-2507] parameter declaration becomes local in DATA_uart with formal parameter declaration list [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:202]
+WARNING: [Synth 8-2507] parameter declaration becomes local in DATA_uart with formal parameter declaration list [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:215]
+WARNING: [Synth 8-2507] parameter declaration becomes local in DATA_uart with formal parameter declaration list [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:221]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 415.805 ; gain = 111.039
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'uart_DATA_uart_0_0' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ip/uart_DATA_uart_0_0/synth/uart_DATA_uart_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'DATA_uart' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:23]
+	Parameter LOAD_DATA_NUMBER_EX bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter TX_IDLE bound to: 4'b0000 
+	Parameter TX_INIT bound to: 4'b0001 
+	Parameter TX_WAIT bound to: 4'b0010 
+	Parameter TX_STAT bound to: 4'b0011 
+	Parameter TX_RD bound to: 4'b0100 
+	Parameter TX_SET bound to: 4'b0101 
+	Parameter TX_READ bound to: 4'b0110 
+	Parameter RX_REG bound to: 4'b0000 
+	Parameter TX_REG bound to: 4'b0100 
+	Parameter STAT_REG bound to: 4'b1000 
+	Parameter CTRL_REG bound to: 4'b1100 
+	Parameter CMD_INIT bound to: 19 - type: integer 
+	Parameter time_valid bound to: 4'b0010 
+	Parameter time_interval bound to: 4'b1001 
+	Parameter RX_IDLE bound to: 4'b0000 
+	Parameter RX_STAT bound to: 4'b0001 
+	Parameter RX_RD bound to: 4'b0010 
+	Parameter RX_REQ bound to: 4'b0011 
+	Parameter RX_DATA bound to: 4'b0100 
+	Parameter UART_INIT_CMD bound to: 2'b01 
+	Parameter SET_PARAM_CMD bound to: 2'b10 
+	Parameter READ_PARAM_CMD bound to: 2'b11 
+	Parameter READ_PARAM bound to: -1431655766 - type: integer 
+	Parameter TIME_4S bound to: 400000000 - type: integer 
+	Parameter JUDG_IDLE bound to: 4'b0000 
+	Parameter JUDG_CMD bound to: 4'b0001 
+	Parameter JUDG_PARAM bound to: 4'b0010 
+	Parameter JUDG_REPLY bound to: 4'b0011 
+	Parameter JUDG_OVER bound to: 4'b0100 
+	Parameter JUDG_FLAG bound to: 16'b1110110111111010 
+	Parameter PARAM_FLAG bound to: 8'b00111001 
+	Parameter REPLY_FLAG bound to: 8'b00000011 
+INFO: [Synth 8-226] default block is never used [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:271]
+WARNING: [Synth 8-6014] Unused sequential element reply_cnt_reg was removed.  [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:458]
+WARNING: [Synth 8-6014] Unused sequential element reply_right_reg was removed.  [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:459]
+WARNING: [Synth 8-6014] Unused sequential element tx_empty_reg was removed.  [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:928]
+WARNING: [Synth 8-5788] Register tx_fifo_reg in module DATA_uart is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:697]
+INFO: [Synth 8-256] done synthesizing module 'DATA_uart' (1#1) [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:23]
+INFO: [Synth 8-256] done synthesizing module 'uart_DATA_uart_0_0' (2#1) [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ip/uart_DATA_uart_0_0/synth/uart_DATA_uart_0_0.v:57]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[31]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[30]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[29]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[28]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[27]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[26]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[25]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[24]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[23]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[22]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[21]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[20]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[19]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[18]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[17]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[16]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[15]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[14]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[13]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[12]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[11]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[10]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[9]
+WARNING: [Synth 8-3331] design DATA_uart has unconnected port READ_DATA[8]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 445.227 ; gain = 140.461
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 445.227 ; gain = 140.461
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 829.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 829.145 ; gain = 524.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 829.145 ; gain = 524.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 829.145 ; gain = 524.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'wr_data_valid_reg' into 'wr_addr_valid_reg' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:113]
+WARNING: [Synth 8-6014] Unused sequential element wr_data_valid_reg was removed.  [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:113]
+INFO: [Synth 8-5546] ROM "up_data_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "cmd_type" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "judg_next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "judg_one" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "judg_one" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "raman1_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "raman2_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "edfa_curr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tx_next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wr_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wr_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wr_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_one" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_over" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_over" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_over" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rd_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rd_over" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rd_stat" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rd_busy" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'dw_reg2_reg' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:255]
+WARNING: [Synth 8-327] inferring latch for variable 'dw_reg1_reg' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:254]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 829.145 ; gain = 524.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 7     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 2     
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 1     
+	  13 Input     16 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 8     
+	   6 Input     16 Bit        Muxes := 3     
+	   8 Input     16 Bit        Muxes := 3     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   6 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   8 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 12    
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   3 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 31    
+	   6 Input      1 Bit        Muxes := 10    
+	   8 Input      1 Bit        Muxes := 14    
+	   3 Input      1 Bit        Muxes := 3     
+	   9 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DATA_uart 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 7     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 2     
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 1     
+	  13 Input     16 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 8     
+	   6 Input     16 Bit        Muxes := 3     
+	   8 Input     16 Bit        Muxes := 3     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   6 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   8 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 12    
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   3 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 31    
+	   6 Input      1 Bit        Muxes := 10    
+	   8 Input      1 Bit        Muxes := 14    
+	   3 Input      1 Bit        Muxes := 3     
+	   9 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "inst/cmd_type" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "inst/judg_next_state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[31]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[30]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[29]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[28]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[27]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[26]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[25]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[24]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[23]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[22]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[21]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[20]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[19]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[18]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[17]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[16]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[15]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[14]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[13]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[12]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[11]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[10]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[9]
+WARNING: [Synth 8-3331] design uart_DATA_uart_0_0 has unconnected port READ_DATA[8]
+INFO: [Synth 8-3886] merging instance 'inst/time_auto_rd_cnt_reg[30]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/time_auto_rd_cnt_reg[31]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/time_auto_rd_cnt_reg[29]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/tx_current_state_reg[3]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/time_cnt_rd_reg[3]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/time_cnt_rd_reg[2]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/rx_current_state_reg[3]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/judg_current_state_reg[3]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[8]' (FDCE) to 'inst/wr_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[9]' (FDCE) to 'inst/wr_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[10]' (FDCE) to 'inst/wr_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[11]' (FDCE) to 'inst/wr_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[12]' (FDCE) to 'inst/wr_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[13]' (FDCE) to 'inst/wr_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[14]' (FDCE) to 'inst/wr_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[15]' (FDCE) to 'inst/wr_data_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[16]' (FDCE) to 'inst/wr_data_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[17]' (FDCE) to 'inst/wr_data_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[18]' (FDCE) to 'inst/wr_data_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[19]' (FDCE) to 'inst/wr_data_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[20]' (FDCE) to 'inst/wr_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[21]' (FDCE) to 'inst/wr_data_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[22]' (FDCE) to 'inst/wr_data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[23]' (FDCE) to 'inst/wr_data_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[24]' (FDCE) to 'inst/wr_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[25]' (FDCE) to 'inst/wr_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[26]' (FDCE) to 'inst/wr_data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[27]' (FDCE) to 'inst/wr_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[28]' (FDCE) to 'inst/wr_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[29]' (FDCE) to 'inst/wr_data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_data_reg[30]' (FDCE) to 'inst/wr_data_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/wr_data_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[0]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[1]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[4]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[5]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[6]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[7]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[8]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[9]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[10]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[11]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[12]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[13]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[14]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[15]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[16]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[17]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[18]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[19]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[20]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[21]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[22]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[23]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[24]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[25]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[26]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[27]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[28]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[29]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/wr_addr_reg[30]' (FDCE) to 'inst/wr_addr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/wr_addr_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/up_data_reg[16]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/up_data_reg[17]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/up_data_reg[18]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/up_data_reg[19]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/up_data_reg[20]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/up_data_reg[21]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/up_data_reg[22]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/up_data_reg[23]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/up_data_reg[24]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/up_data_reg[25]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/up_data_reg[26]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/up_data_reg[27]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/up_data_reg[28]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/up_data_reg[29]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/up_data_reg[30]' (FDC) to 'inst/up_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/up_data_reg[31]' (FDC) to 'inst/up_data_valid_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/up_data_valid_reg[2]' (FDC) to 'inst/up_data_valid_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/up_data_valid_reg[3] )
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[31]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[31]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[30]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[30]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[29]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[29]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[28]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[28]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[27]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[27]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[26]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[26]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[25]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[25]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[24]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[24]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[23]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[23]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[22]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[22]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[21]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[21]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[20]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[20]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[19]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[19]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[18]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[18]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[17]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[17]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[16]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[16]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[15]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[15]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[14]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[14]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[13]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[13]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[12]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[12]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[11]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[11]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[10]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[10]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[9]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[9]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[8]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[8]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[7]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[7]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[6]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[6]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[5]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[5]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[4]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[4]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[2]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[2]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[1]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[1]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[0]) is unused and will be removed from module uart_DATA_uart_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/rd_addr_reg[0]/Q' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:822]
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[31]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[30]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[29]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[28]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[27]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[26]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[25]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[24]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[23]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[22]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[21]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[20]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[19]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[18]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[17]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[16]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[15]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[14]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[13]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[12]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[11]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[10]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[9]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[8]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[7]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[6]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[5]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[4]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[2]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[1]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/rd_addr_reg[0]__0) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/wr_addr_reg[31]) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/wr_data_reg[31]) is unused and will be removed from module uart_DATA_uart_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/up_data_valid_reg[3]) is unused and will be removed from module uart_DATA_uart_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 829.145 ; gain = 524.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 839.582 ; gain = 534.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 840.020 ; gain = 535.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5966] Removing register instance (\inst/rd_addr_valid_reg__1 ) from module (uart_DATA_uart_0_0) as it has self-loop and (\inst/rd_addr_valid_reg ) is actual driver [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:108]
+INFO: [Synth 8-5966] Removing register instance (\inst/rd_addr_reg[3]__0 ) from module (uart_DATA_uart_0_0) as it has self-loop and (\inst/rd_addr_reg[3] ) is actual driver [e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ipshared/cc56/src/DATA_uart.v:109]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 865.137 ; gain = 560.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 865.137 ; gain = 560.371
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 865.137 ; gain = 560.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 865.137 ; gain = 560.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 865.137 ; gain = 560.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 865.137 ; gain = 560.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 865.137 ; gain = 560.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     9|
+|2     |LUT1   |     4|
+|3     |LUT2   |    50|
+|4     |LUT3   |    23|
+|5     |LUT4   |    33|
+|6     |LUT5   |    45|
+|7     |LUT6   |    90|
+|8     |FDCE   |   201|
+|9     |FDPE   |     2|
+|10    |FDRE   |     1|
+|11    |LDC    |    64|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |   522|
+|2     |  inst   |DATA_uart |   522|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 865.137 ; gain = 560.371
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 93 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 865.137 ; gain = 176.453
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 865.137 ; gain = 560.371
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  LDC => LDCE: 64 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+187 Infos, 65 Warnings, 93 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 866.387 ; gain = 573.277
+INFO: [Common 17-1381] The checkpoint 'E:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.runs/uart_DATA_uart_0_0_synth_1/uart_DATA_uart_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP e:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.srcs/sources_1/bd/uart/ip/uart_DATA_uart_0_0/uart_DATA_uart_0_0.xci
+INFO: [Common 17-1381] The checkpoint 'E:/SourceTree/AXI-Interface/ip_verify/uart_verify/uart_verify/uart_verify.runs/uart_DATA_uart_0_0_synth_1/uart_DATA_uart_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file uart_DATA_uart_0_0_utilization_synth.rpt -pb uart_DATA_uart_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 866.387 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 16 15:07:34 2020...

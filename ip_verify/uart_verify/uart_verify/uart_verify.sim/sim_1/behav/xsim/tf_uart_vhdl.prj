@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../uart_verify.ip_user_files/bd/uart/ip/uart_axi_uartlite_0_0/sim/uart_axi_uartlite_0_0.vhd" \
+
+# Do not sort compile order
+nosort
