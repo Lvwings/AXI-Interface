@@ -100,7 +100,7 @@
 
 写模式的时序如下：
 
-![SLAVE_write](E:\SourceTree\AXI-Interface\image\SLAVE_write.PNG)
+![SLAVE_write](https://github.com/Lvwings/AXI-Interface/blob/master/image/MASTER_write.PNG?raw=true)
 
 **READ MODE**
 
@@ -130,7 +130,7 @@
 
 读模式下的时序如下：
 
-![SLAVE_read](E:\SourceTree\AXI-Interface\image\SLAVE_read.PNG)
+![SLAVE_read](https://github.com/Lvwings/AXI-Interface/blob/master/image/SLAVE_read.PNG?raw=true)
 
 ### Results
 
@@ -264,7 +264,7 @@
 
 写模式下时序如下：
 
-![MASTER_write](E:\SourceTree\AXI-Interface\image\MASTER_write.PNG)
+![MASTER_write](https://github.com/Lvwings/AXI-Interface/blob/master/image/MASTER_write.PNG?raw=true)
 
 **READ MODE**
 
@@ -301,7 +301,7 @@
 
 读模式下时序如下：
 
-![MASTER_read](E:\SourceTree\AXI-Interface\image\MASTER_read.PNG)
+![MASTER_read](https://github.com/Lvwings/AXI-Interface/blob/master/image/MASTER_read.PNG?raw=true)
 
 ### Results
 
