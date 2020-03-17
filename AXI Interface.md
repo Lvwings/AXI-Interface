@@ -2,11 +2,11 @@
 
 在vivado中可以通过创建IP来调用其自带的AXI模板：
 
-![image-20200309142633977](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200309142633977.png)
+![image-20200309142633977](https://github.com/Lvwings/AXI-Interface/blob/master/image/%E5%88%9B%E5%BB%BAIP.PNG?raw=true)
 
 ​		在使用过程中，我更希望AXI是作为数据的接口来使用，数据的处理应由其他模块来进行，这样各个模块的功能更加清晰，对于内部代码实现也更加独立。类似于如下结构
 
-![接口](E:\SourceTree\AXI\image\接口.PNG)
+![接口](https://github.com/Lvwings/AXI-Interface/blob/master/image/%E6%8E%A5%E5%8F%A3.PNG?raw=true)
 
 ​		数据由总线进入SLAVE接口，再经过DATA进行相应的数据处理，最终通过MASTER接口发送给目标IP。
 
@@ -63,7 +63,7 @@
 	      begin
 	        case ( axi_awaddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB] )
 	          4'h0:
-	            for ( byte_index = 0; byte_index <= (C_S_AXI_DATA_WIDTH/8)-1; byte_index 						= byte_index+1 )
+	            for ( byte_index = 0; byte_index <= (C_S_AXI_DATA_WIDTH/8)-1; byte_index= byte_index+1 )
 	              if ( S_AXI_WSTRB[byte_index] == 1 ) begin
 	                // Respective byte enables are asserted as per write strobes 
 	                // Slave register 0
@@ -98,6 +98,10 @@
 
 ​		目前是暂时不使用地址0作为配置。
 
+写模式的时序如下：
+
+![SLAVE_write](E:\SourceTree\AXI-Interface\image\SLAVE_write.PNG)
+
 **READ MODE**
 
 读模式下，需要将来自后级的数据上传给总线，即处理`UPLOAD_DATA_VALID`和`UPLOAD_DATA`  。
@@ -124,9 +128,13 @@
 				...
 ```
 
+读模式下的时序如下：
+
+![SLAVE_read](E:\SourceTree\AXI-Interface\image\SLAVE_read.PNG)
+
 ### Results
 
-![IP](E:\SourceTree\AXI\image\SLAVE.PNG)
+![IP](https://github.com/Lvwings/AXI-Interface/blob/master/image/SLAVE.PNG?raw=true)
 
 将用户接口封装成自定义接口，打包工程后就可以得到如上的SLAVE接口IP。
 
@@ -172,7 +180,7 @@
 
 为了方便设计，在原有模板的基础上，以写模式为例将时序设计如下：
 
-![写时序](E:\SourceTree\AXI\image\写时序.PNG)
+![写时序](https://github.com/Lvwings/AXI-Interface/blob/master/image/%E5%86%99%E6%97%B6%E5%BA%8F.PNG?raw=true)
 
 `WRITE_ADDR_VALID`和`WRITE_DATA_VALID`同时有效，由于数据读取延时，因此输入至少需要保持两个时钟有效。**读写的触发**，通过对`WRITE_ADDR_VALID`的**上升沿**进行判定，即得到`init_write_pulse`.
 
@@ -254,6 +262,10 @@
         end 	          
 ```
 
+写模式下时序如下：
+
+![MASTER_write](E:\SourceTree\AXI-Interface\image\MASTER_write.PNG)
+
 **READ MODE**
 
 在原先模板中，读模式是由状态机中写模式结束触发，参照写模式我们将读模式独立出来。
@@ -269,7 +281,8 @@
 同样对于`axi_arvalid`和`axi_rrvalid`无需作出修改。`axi_rdata`为输入无需修改，但是对于`axi_araddr`修改如下：
 
 ```verilog
-    if (M_AXI_ARESETN == 0  || init_read_pulse == 1'b1)                                	          begin                                                 
+    if (M_AXI_ARESETN == 0  || init_read_pulse == 1'b1)
+        begin                                                 
             axi_araddr <= READ_ADDR;      // assign                              
         end                                                                         
     else if (M_AXI_ARREADY && axi_arvalid)                  
@@ -286,9 +299,13 @@
 	assign READ_DATA_VALID = axi_rready && M_AXI_RVALID;
 ```
 
+读模式下时序如下：
+
+![MASTER_read](E:\SourceTree\AXI-Interface\image\MASTER_read.PNG)
+
 ### Results
 
-![MASTER](E:\SourceTree\AXI\image\MASTER.PNG)
+![MASTER](https://github.com/Lvwings/AXI-Interface/blob/master/image/MASTER.PNG?raw=true)
 
 将用户接口封装成自定义接口，打包工程后就可以得到如上的MASTER接口IP。
 
@@ -406,7 +423,7 @@
 
 ### Results
 
-![DATA](E:\SourceTree\AXI\image\DATA.PNG)
+![DATA](https://github.com/Lvwings/AXI-Interface/blob/master/image/DATA.PNG?raw=true)
 
 将用户接口封装成自定义接口，打包工程后就可以得到如上的DATA接口IP，这里添加了功能端口`uart_interrupt`
 
